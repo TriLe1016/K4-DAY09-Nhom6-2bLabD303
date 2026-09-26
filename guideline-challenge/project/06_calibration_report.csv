@@ -1,1 +1,5 @@
 sample_id,item,values_by_annotator,diagnosis,action,rule_change
+GTS09,traffic_sign/count,tri=4;minh=9;vu=9;ly=12,guideline_gap,revise_rule,"Quy định rõ về biển phụ trên bảng chỉ dẫn hướng: chỉ vẽ box cho biển độc lập hoặc bảng phụ có viền phân cách riêng; các icon/ký hiệu vẽ chìm trong bảng chỉ dẫn lớn không vẽ box riêng. Giữ nghiêm ngưỡng min 10px."
+GTS04,traffic_sign/attr:speed_value,tri=120|120;minh=70|120;vu=70|120;ly=120|120,data_ambiguity,add_escalation,"Khi biển bị sương mù/xa không thể nhận diện chắc chắn chữ số (lẫn giữa 70 và 120), annotator phải gán speed_value=unknown, đồng thời bật degraded=true và needs_review=true thay vì tự đoán số."
+GTS06,traffic_sign/count,tri=2;minh=0;vu=0;ly=0,execution_error,coaching,"Coaching và nhắc nhở annotator: quan sát kỹ toàn cảnh lề đường, phát hiện biển giới hạn tốc độ 30 kèm bảng phụ bên dưới; không được bỏ sót biển báo quan trọng (critical-risk)."
+GTS01,image_status/tag,tri=1;minh=1;vu=1;ly=0,guideline_gap,revise_rule,"Bắt buộc mọi ảnh phải được gắn 1 tag cấp ảnh image_status (positive nếu có ít nhất một biển báo hợp lệ, negative nếu không có biển, unresolved nếu nghi ngờ cần escalate)."

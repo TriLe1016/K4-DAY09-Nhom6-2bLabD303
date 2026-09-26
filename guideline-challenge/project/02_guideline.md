@@ -1,8 +1,8 @@
-Version: v1
+Version: v2
 
 # Guideline gán nhãn biển báo GTSDB
 
-Bản đầu tiên, dùng để nhóm thử gán nhãn và ghi lại những chỗ chưa rõ. Các ngưỡng dưới đây là quy ước của nhóm, chưa được kiểm chứng qua calibration. Tài liệu này dùng với `03_cvat_labels.json` hiện tại.
+Bản v2 cập nhật sau calibration nội bộ. Đã bổ sung và làm rõ: quy tắc tách biển phụ trên bảng chỉ dẫn lớn (từ case GTS09), quy tắc xử lý biển mờ/xa do sương mù (từ case GTS04), nhắc nhở không bỏ sót biển báo critical và bảng phụ (từ case GTS06), và quy định bắt buộc gán nhãn tag image_status cho 100% ảnh (từ case GTS01). Tài liệu dùng với `03_cvat_labels.json`.
 
 ## 1. Objective & Scope — Mục tiêu và phạm vi
 
@@ -16,6 +16,8 @@ Gán nhãn các biển giao thông trong ảnh GTSDB để phục vụ phát hi�
 ## 2. Annotation Unit — Đơn vị gán nhãn
 
 Một tấm biển là một đối tượng. Hai biển chung một cột phải vẽ hai box. Bảng phụ có biên riêng cũng vẽ riêng. Một tấm có nhiều dòng chữ vẫn là một đối tượng.
+- **Biển trên bảng chỉ dẫn hướng lớn (Direction boards):** Chỉ vẽ box cho biển độc lập hoặc bảng phụ có khung viền vật lý riêng biệt; không vẽ box tách rời cho các icon hình vẽ/ký hiệu được in chìm bên trong tấm biển chỉ dẫn lớn.
+- **Biển giới hạn tốc độ và bảng phụ đi kèm (như case GTS06):** Biển tốc độ và bảng phụ bên dưới là 2 đối tượng tách biệt, phải vẽ 2 bounding box riêng (không gộp chung).
 
 Dùng rectangle ở chế độ **Shape**, không dùng Track.
 

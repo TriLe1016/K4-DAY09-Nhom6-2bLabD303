@@ -1,1 +1,17 @@
 sample_id,split,tags,reason
+GTS02,example,normal;edge,Giao lộ có biển Yield tam giác ngược và biển hiệu lệnh tròn xanh
+GTS18,example,normal,Tam giác cảnh báo nằm trên biển tốc độ 30 tách 2 box độc lập
+GTS21,example,normal;edge,Biển tròn xanh mũi tên và biển vuông người đi bộ tách biển quảng cáo
+GTS27,example,edge;low_visibility,Tam giác cảnh báo ngược sáng bên phải bật cờ degraded
+GTS28,example,negative,Ảnh đường làng không có biển báo giao thông kiểm tra gán tag negative
+GTS01,calibration,edge;occlusion,Cột biển xếp 3 tầng sát tán cây rậm rạp kiểm tra quy tắc tách box và occlusion
+GTS04,calibration,edge;small_far,Cao tốc sương mù có biển 120km/h và cấm vượt ở xa cạnh biển chỉ dẫn lớn
+GTS06,calibration,critical;normal,Biển tốc độ 30km/h có bảng phụ bên dưới làm case critical về tốc độ cho calibration
+GTS09,calibration,edge;ambiguity,Biển báo ven đường trong bóng râm kiểm tra phân loại và phát hiện bất đồng
+GTS11,calibration,normal,Đảo giao thông có biển tròn xanh rẽ bắt buộc và biển đỗ xe P
+GTS16,calibration,edge;conflict,Cột đèn giao thông kèm biển ưu tiên hình thoi vàng cạnh logo nhà thuốc
+GTS08,blind,edge;critical;low_visibility;small_far,Chạng vạng dưới cầu hai biển 120 và biển cấm vượt
+GTS10,blind,edge;ambiguity,Biển xanh rẽ phải biển P bảng hiệu cửa hàng màu xanh
+GTS19,blind,normal;critical,Tam giác đường cong đặt trên biển 50
+GTS23,blind,critical;edge,Hai biển STOP và biển tròn xanh
+GTS26,blind,edge;small_far,Chỉ có một tam giác nhỏ ở xa dễ bị ghi nhầm là negative

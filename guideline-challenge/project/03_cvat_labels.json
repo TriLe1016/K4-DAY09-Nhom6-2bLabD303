@@ -1,1 +1,171 @@
-[]
+[
+  {
+    "name": "traffic_sign",
+    "color": "#1976D2",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "family",
+        "mutable": false,
+        "input_type": "select",
+        "default_value": "__undefined__",
+        "values": [
+          "__undefined__",
+          "prohibitory",
+          "mandatory",
+          "warning",
+          "priority",
+          "information",
+          "supplementary",
+          "unknown"
+        ]
+      },
+      {
+        "name": "sign_kind",
+        "mutable": false,
+        "input_type": "select",
+        "default_value": "__undefined__",
+        "values": [
+          "__undefined__",
+          "speed_limit",
+          "stop",
+          "yield",
+          "other",
+          "unknown"
+        ]
+      },
+      {
+        "name": "speed_value",
+        "mutable": false,
+        "input_type": "select",
+        "default_value": "__undefined__",
+        "values": [
+          "__undefined__",
+          "not_applicable",
+          "unknown",
+          "5",
+          "10",
+          "15",
+          "20",
+          "25",
+          "30",
+          "40",
+          "50",
+          "60",
+          "70",
+          "80",
+          "90",
+          "100",
+          "110",
+          "120",
+          "130",
+          "other"
+        ]
+      },
+      {
+        "name": "occlusion",
+        "mutable": false,
+        "input_type": "select",
+        "default_value": "__undefined__",
+        "values": [
+          "__undefined__",
+          "none",
+          "partial",
+          "unknown"
+        ]
+      },
+      {
+        "name": "truncated",
+        "mutable": false,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false"
+        ]
+      },
+      {
+        "name": "degraded",
+        "mutable": false,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false"
+        ]
+      },
+      {
+        "name": "needs_review",
+        "mutable": false,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false"
+        ]
+      },
+      {
+        "name": "review_note",
+        "mutable": false,
+        "input_type": "text",
+        "default_value": "",
+        "values": [
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ignore_region",
+    "color": "#757575",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "reason",
+        "mutable": false,
+        "input_type": "select",
+        "default_value": "__undefined__",
+        "values": [
+          "__undefined__",
+          "too_small",
+          "heavy_occlusion",
+          "heavy_truncation",
+          "backside",
+          "edge_on"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "image_escalate",
+    "color": "#E53935",
+    "type": "tag",
+    "attributes": [
+      {
+        "name": "review_note",
+        "mutable": false,
+        "input_type": "text",
+        "default_value": "",
+        "values": [
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "name": "image_status",
+    "color": "#43A047",
+    "type": "tag",
+    "attributes": [
+      {
+        "name": "status",
+        "mutable": false,
+        "input_type": "select",
+        "default_value": "__undefined__",
+        "values": [
+          "__undefined__",
+          "positive",
+          "negative",
+          "unresolved"
+        ]
+      }
+    ]
+  }
+]
